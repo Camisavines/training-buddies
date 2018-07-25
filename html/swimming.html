@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Training Buddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- css -->
+    <link rel="stylesheet" href="../css/home.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center">Swimming</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="bio.html">Creators</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="bio.html">Creators</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+
+
+
+    <!-- Left side of the screen -->
+        <div class="row" style="padding-top: 15px;">
+
+          <div class="col s3 center show-on-medium-and-up hide-on-small-only">
+            <div class="row">
+              <img class="circle" width="50%" src="../photos/swimming/phelp.jpg">
+              <p><b>Michael Phelps</b></p>
+            </div>
+
+            <div class="row">
+              <img class="circle" width="50%" src="../photos/swimming/simone.jpg">
+              <p><b>Simone Manuel</b></p>
+            </div>
+
+            <div class="row">
+              <img class="circle" width="50%" src="../photos/swimming/ryan.jpg">
+              <p><b>Ryan Lochte</b></p>
+            </div>
+          </div>
+
+          <div class="col s12 center hide-on-med-and-up show-on-small" style="padding-top:15px; padding-bottom:15px;">
+            <div class="col s4">
+              <img class="circle" width="75%" src="../photos/swimming/phelp.jpg">
+              <p><b>Michael Phelps</b></p>
+            </div>
+            <div class="col s4">
+              <img class="circle" width="75%" src="../photos/swimming/simone.jpg">
+              <p><b>Simone Manuel</b></p>
+            </div>
+            <div class="col s4">
+              <img class="circle" width="75%" src="../photos/swimming/ryan.jpg">
+              <p><b>Ryan Lochte</b></p>
+            </div>
+          </div>
+
+
+        <!-- <div class="row hide-on-med-and-up">
+
+          <div class="col s12 center">
+
+            <div class="col s4">
+              <img class="circle" width="75%" src="https://t4.ftcdn.net/jpg/01/00/72/23/500_F_100722342_15KrW8pYzlslJwopMhmI7EHVwx1XK0KC.jpg">
+            </div>
+
+            <div class="col s4">
+              <img class="circle" width="75%" src="https://t4.ftcdn.net/jpg/01/00/72/23/500_F_100722342_15KrW8pYzlslJwopMhmI7EHVwx1XK0KC.jpg">
+            </div>
+
+            <div class="col s4">
+              <img class="circle" width="75%" src="https://t4.ftcdn.net/jpg/01/00/72/23/500_F_100722342_15KrW8pYzlslJwopMhmI7EHVwx1XK0KC.jpg">
+            </div>
+
+          </div>
+
+        </div> -->
+
+
+          <div class="col s12 m8">
+
+    <!-- workout routines go -->
+            <div class="row">
+
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header">Workout 1</div>
+                  <div class="collapsible-body"><span><strong>Workout</strong></span>
+                    <p>Begin with 200 to 400 meters of easy swimming, and then do the following two drills to warm up for your swimming workout. Kicks: Grab a kickboard and hold onto it as you swim 100 meters. Rest 20 seconds after each effort. Repeat four times total.</p>
+                    <ol>
+                    </ol>
+                    <p>Source: https://www.beachbodyondemand.com/blog/must-do-swim-workouts</p>
+
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Workout 2</div>
+                  <div class="collapsible-body"><span><strong>Workout</strong></span>
+                  <p>This is a harder swimming workout.</p>
+                  <ol>
+                    <li>200 free</li>
+                    <li>200 IM drill.</li>
+                    <li>8 x 100 free (15 sec rest)</li>
+                    <li>8 x 50 breaststroke pull with dolphin kick.</li>
+                    <li>2 x 100 back 6 kick switch.</li>
+                    <li>400 choice/free.</li>
+                    <li>4 x 50 (25 hard, 25 easy)</li>
+                    <li>Cooldown</li>
+                  </ol>
+                  <p>Source: www.restonmasters.com/resources/workouts/</p>
+                </div>
+                </li>
+              </ul>
+
+
+
+        </div>
+
+        <div class="row">
+          <div class="col s12">
+            <h2>Locations</h2>
+            <p>Click on the pinpoints to see additional information.</p>
+          </div>
+        </div>
+
+
+
+        <div class="row">
+          <div class="col s12">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=17QOncY-Ij-YYKVG3s55YkcJUOrcEAs4U" width="100%" height="480"></iframe>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

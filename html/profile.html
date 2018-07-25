@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Training Buddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- css -->
+    <link rel="stylesheet" href="../css/home.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+
+  </head>
+  <body>
+
+    <!-- Nav Bar -->
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center">Profile</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="bio.html">Creators</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="bio.html">Creators</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+
+    <div class="container" style="padding-top: 5%">
+      <div class="row">
+        <div class="col s12 m3">
+          <img src="http://torquayslsc.com.au/wp-content/uploads/2017/08/male-profile-blank.jpg" id="userImage" class="circle" width="100%">
+        </div>
+
+        <div class="col s12 m9">
+          <div class="row">
+            <div class="col s12 left">
+              <div class="name"></div>
+            </div>
+          </div>
+          <div class="input-field col s12">
+            <input type="text" class="validate bio">
+            <span class="helper-text" data-error="wrong" data-success="right">Bio</span>
+          </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input type="email" class="validate email">
+        <span class="helper-text" data-error="wrong" data-success="right">Email</span>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" class="validate password">
+        <span class="helper-text" data-error="wrong" data-success="right">Password</span>
+      </div>
+    </form>
+    </div>
+
+      <a class="btn-floating btn-large waves-effect waves-light right" href="./profile-edit.html"><i class="material-icons black-text">edit</i></a>
+
+
+
+
+    </div>
+
+
+  </body>
+</html>

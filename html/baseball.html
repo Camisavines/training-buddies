@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Training Buddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- css -->
+    <link rel="stylesheet" href="../css/home.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center">Baseball</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="bio.html">Creators</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="bio.html">Creators</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+
+    <!-- Left side of the screen -->
+        <div class="row" style="padding-top: 15px;">
+
+          <div class="col s3 center show-on-medium-and-up hide-on-small-only">
+            <div class="row">
+              <img class="circle" width="50%" src="../photos/baseball/mike.jpg">
+              <p><b>Mike Trout</b></p>
+            </div>
+
+            <div class="row">
+              <img class="circle" width="50%" src="../photos/baseball/clay.jpg">
+              <p><b>Clayton Kershaw</b></p>
+            </div>
+
+            <div class="row">
+              <img class="circle" width="50%" src="../photos/baseball/chris.jpg">
+              <p><b>Chris Bryant</b></p>
+            </div>
+          </div>
+
+          <div class="col s12 center hide-on-med-and-up show-on-small" style="padding-top:15px; padding-bottom:15px;">
+            <div class="col s4">
+              <img class="circle" width="75%" src="../photos/baseball/mike.jpg">
+              <p><b>Mike Trout</b></p>
+            </div>
+            <div class="col s4">
+              <img class="circle" width="75%" src="../photos/baseball/clay.jpg">
+              <p><b>Clayton Kershaw</b></p>
+            </div>
+            <div class="col s4">
+              <img class="circle" width="75%" src="../photos/baseball/chris.jpg">
+              <p><b>Chris Bryant</b></p>
+            </div>
+          </div>
+
+
+          <div class="col s12 m8">
+
+
+
+            <!-- workout -->
+
+            <div class="row">
+
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header">Workout 1</div>
+                  <div class="collapsible-body"><span><strong>Upper Body Workout</strong></span>
+                    <p>Bring your arms back down and lift them up directly to the side. Lift the dumbbells only to shoulder level, then slowly bring them back down. This exercise works your teres minor, infraspinatus and subscapularis muscles (rotator cuff muscles). It is more about proper form and range of motion than the amount of weight.</p>
+                    <ol>
+                      <p>Source: www.stack.com/a/an-upper-body-baseball-training-routine-for-the-off-season</p>
+                    </ol>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Workout 2</div>
+                  <div class="collapsible-body"><span><strong>Leg Workout</strong></span>
+                  <p>Just try some running exercises on the running page</p>
+                </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Workout 3</div>
+                  <div class="collapsible-body"><span><strong>Arm Workout</strong></span>
+                  <p>This helps you stregthen and aim your arm in your throws. Try this workout with a partner.</p>
+                  <ol>
+                    <li>Stand shoulder- width apart, with throwing arm placed upwards at a 90- degree angle. While holding elbow with glove, throw ball to partner using just the wrist.</li>
+                    <li>Sit with legs spread and arm in same position as exercise above. This time use the area from the elbow up to throw ball to partner.</li>
+                    <li>Remain sitting and throw ball by rotating hips and turning upper torso. (Focusing on follow- through is not necessary.) Use the glove arm or elbow to direct throw.</li>
+                    <li>Go to one knee. Throw ball by rotating hips and turning upper torso, as in above exercise. This time emphasize follow- through across the raised knee.</li>
+                    <li>Extra: Stand with glove arm closest to partner, and feet shoulder- width apart. Repeat the above steps, concentrating on follow- through. This time throw without moving your feet.</li>
+                  </ol>
+                  <p>Source: www.active.com/baseball/.../youth-baseball-tips-for-developing-arm-strength-878652</p>
+                </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Workout 4</div>
+                  <div class="collapsible-body"><span><strong>Forearm Workout</strong></span>
+                  <p>Make forearm exercises a staple part of your baseball training program, and get the grip strength you need to crush the ball. Search up different Workouts below</p>
+                  <ol>
+                    <li>Farmer's Walk</li>
+                    <li>Wrist Extension</li>
+                    <li>Wrist Flexion</li>
+                    <li>Hammer Curls</li>
+                  </ol>
+                  <p>Source: http://www.stack.com/a/improve-bat-speed-with-these-baseball-specific-forearm-exercises</p>
+
+                </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Workout 5</div>
+                  <div class="collapsible-body"><span><strong>Shoulder Workouts</strong></span>
+                  <p> Stand with arms at your side and point thumbs up. Keep elbows straight and raise your arms to shoulder height at a 45 degree angle. Lower the arms with a three second count.</p>
+                  <ol>
+                  </ol>
+                  <p>Source: https://kbandstraining.com/arm-strength-baseball-throwing-shoulder-exercises/</p>
+                </div>
+                </li>
+              </ul>
+        </div>
+
+        <div class="row">
+          <div class="col s12">
+            <h2>Locations</h2>
+            <p>Click on the pinpoints to see additional information about each location.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1_3Dv3pFv1ywD0TqLhhuN5SvC0DjopaKh" width="100%" height="480"></iframe>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Training Buddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- css -->
+    <link rel="stylesheet" href="../css/home.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center">Weight Lifting</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="bio.html">Creators</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="bio.html">Creators</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+
+
+
+
+    <!-- Left side of the screen -->
+        <div class="row" style="padding-top: 15px;">
+
+          <div class="col s3 center show-on-medium-and-up hide-on-small-only">
+            <div class="row">
+              <img class="circle" width="50%" src="../photos/weights/arnold.jpg">
+              <p><b>Arnold Schwarzenegger</b></p>
+            </div>
+
+            <div class="row">
+              <img class="circle" width="50%" src="../photos/weights/zoe.jpg">
+              <p><b>Zoe Smith</b></p>
+            </div>
+
+            <div class="row">
+              <img class="circle" width="50%" src="../photos/weights/klo.jpeg">
+              <p><b>Dmitry Klokov</b></p>
+            </div>
+          </div>
+
+          <div class="col s12 center hide-on-med-and-up show-on-small" style="padding-top:15px; padding-bottom:15px;">
+            <div class="col s4">
+              <img class="circle" width="75%" src="../photos/weights/arnold.jpg">
+              <p><b>Arnold Schwarzenegger</b></p>
+            </div>
+            <div class="col s4">
+              <img class="circle" width="75%" src="../photos/weights/zoe.jpg">
+              <p><b>Zoe Smith</b></p>
+            </div>
+            <div class="col s4">
+              <img class="circle" width="75%" src="../photos/weights/klo.jpeg">
+              <p><b>Dmitry Klokov</b></p>
+            </div>
+          </div>
+
+
+        <!-- <div class="row hide-on-med-and-up">
+
+          <div class="col s12 center">
+
+            <div class="col s4">
+              <img class="circle" width="75%" src="https://t4.ftcdn.net/jpg/01/00/72/23/500_F_100722342_15KrW8pYzlslJwopMhmI7EHVwx1XK0KC.jpg">
+            </div>
+
+            <div class="col s4">
+              <img class="circle" width="75%" src="https://t4.ftcdn.net/jpg/01/00/72/23/500_F_100722342_15KrW8pYzlslJwopMhmI7EHVwx1XK0KC.jpg">
+            </div>
+
+            <div class="col s4">
+              <img class="circle" width="75%" src="https://t4.ftcdn.net/jpg/01/00/72/23/500_F_100722342_15KrW8pYzlslJwopMhmI7EHVwx1XK0KC.jpg">
+            </div>
+
+          </div>
+
+        </div> -->
+
+
+          <div class="col s12 m8">
+
+    <!-- workout routines go -->
+            <div class="row">
+
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header">Leg Exercises</div>
+                  <div class="collapsible-body"><span><strong>Leg Workouts</strong></span>
+                    <p>These sets of workouts will help with stregthening you leg muscles. (Search up how to do the workouts below)</p>
+                    <ol>
+                      <li>20 Squats</li>
+                      <li>20 Deadlifts</li>
+                      <li>20 Lunges</li>
+                    </ol>
+                    <p> Source: https://www.nerdfitness.com/blog/the-beginners-guide-to-building-muscle-and-strength/</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Push Exercises</div>
+                  <div class="collapsible-body"><span><strong>Pushing Workouts</strong></span>
+                  <p>These sets of workouts will help with stregthening your arm muscles. (Search up how to do the workouts below)</p>
+                  <ol>
+                    <li>Bench Press</li>
+                    <li>Overhead Press</li>
+                    <li>Dips</li>
+                  </ol>
+                  <p> Source: https://www.nerdfitness.com/blog/the-beginners-guide-to-building-muscle-and-strength/
+                </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Pull Exercises</div>
+                  <div class="collapsible-body"><span><strong>Pullig Workout</strong></span>
+                  <p>These sets of workouts will help with stregthening your arm muscles. (Search up how to do the workouts below)</p>
+                  <ol>
+                    <li>Inverted Rows</li>
+                    <li>Pull Ups</li>
+                    <li>Chin Ups</li>
+                  </ol>
+                  <p> Source: https://www.nerdfitness.com/blog/the-beginners-guide-to-building-muscle-and-strength/
+                </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Core Exercises</div>
+                  <div class="collapsible-body"><span><strong>Core Workout</strong></span>
+                  <p>These sets of workouts will help with stregthening youre core and abs. (Search up how to do the workouts below)</p>
+                  <ol>
+                    <li>Reverse Crunches</li>
+                    <li>Hanging Knee Raises</li>
+                    <li>Planks</li>
+                  </ol>
+                  <p> Source: https://www.nerdfitness.com/blog/the-beginners-guide-to-building-muscle-and-strength/</p>
+                </div>
+                </li>
+              </ul>
+
+
+
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <h2>Locations</h2>
+            <p>Click on the pinpoints to see additional information.</p>
+          </div>
+        </div>
+
+
+
+        <div class="row">
+          <div class="col s12">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1tv29Dii0ExKKzuuyUahhCWbXAdffplkV" width="100%" height="480"></iframe>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+  </body>
+</html>

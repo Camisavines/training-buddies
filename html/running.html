@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Training Buddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- css -->
+    <link rel="stylesheet" href="../css/home.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center">Running</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="bio.html">Creators</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="bio.html">Creators</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+
+
+
+
+    <!-- Left side of the screen -->
+        <div class="row" style="padding-top: 15px;">
+
+          <div class="col s3 center show-on-medium-and-up hide-on-small-only">
+            <div class="row">
+              <img class="circle" width="50%" src="../photos/running/bolt.jpg">
+              <p><b>Usian Bolt</b></p>
+            </div>
+
+            <div class="row">
+              <img class="circle" width="50%" src="../photos/running/felix.jpg">
+              <p><b>Alison Felix</b></p>
+            </div>
+
+            <div class="row">
+              <img class="circle" width="50%" src="../photos/running/blake.jpg">
+              <p><b>Yohan Blake</b></p>
+            </div>
+          </div>
+
+          <div class="col s12 center hide-on-med-and-up show-on-small" style="padding-top:15px; padding-bottom:15px;">
+            <div class="col s4">
+              <img class="circle" width="75%" src="../photos/running/bolt.jpg">
+              <p><b>Usian Bolt</b></p>
+            </div>
+            <div class="col s4">
+              <img class="circle" width="75%" src="../photos/running/felix.jpg">
+              <p><b>Alison Felix</b></p>
+            </div>
+            <div class="col s4">
+              <img class="circle" width="75%" src="../photos/running/blake.jpg">
+              <p><b>Yohan Blake</b></p>
+            </div>
+          </div>
+
+
+          <div class="col s12 m8">
+
+    <!-- workout routines go -->
+            <div class="row">
+
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header">Workout 1</div>
+                  <div class="collapsible-body"><span><strong>Long-Distance Workout</strong></span>
+                    <p>This drill helps you run over a long distance while pacing yourself</p>
+                    <ol>
+                      <li>Warm-up: 5 minute easy jog</li>
+                      <li>Work interval: 5 minutes at comfortable pace</li>
+                      <li>Recovery interval: 1 minute at easy/slow pace</li>
+                      <li>Work interval: 4 minutes at comfortable pace</li>
+                      <li>Recovery interval: 1 minute at easy/slow pace</li>
+                      <li>Work interval: 3 minutes at comfortable pace</li>
+                      <li>Recovery interval: 1 minute at easy/slow pace</li>
+                      <li>Work interval: 2 minutes at comfortable pace</li>
+                      <li>Recovery interval  1 minute at easy/slow pace</li>
+                      <li>Work interval: 1 minute at hard (sprint) pace</li>
+                      <li>Recovery interval: 1 minute at easy/slow pace</li>
+                      <li>Cool down: 5 minutes easy jogging</li>
+                    </ol>
+                    <p>Source: https://www.verywellfit.com/effective-30-minute-running-workouts-2911891</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Workout 2</div>
+                  <div class="collapsible-body"><span><strong>Sprint Workout</strong></span>
+                  <p>Perform sprint workout routines three times a week with plenty of rest between workouts. Because of the intensity of these workouts, most athletes shouldn't do sprint workouts more than three times a week.</p>
+                  <ol>
+                    <li>Warm up. Before sprints, warm up thoroughly with easy exercise for 5-10 minutes. Perform the same exercise you will be using for your sprints.</li>
+                    <li>Sprint. Perform your first sprint at about 60 percent max intensity. If you feel any muscle tightness or joint pain, back off and continue to warm up.</li>
+                    <li>Recover. Recover for 2 minutes by slowing to a comfortable pace, but keep moving. This can be an easy jog or a walk, depending on your fitness.</li>
+                    <li>Sprint. Perform your next sprint at about 80 percent max intensity.</li>
+                    <li>Recover. Recover for 2 minutes.</li>
+                    <li>Sprint. Perform the remainder of your sprints at 100 percent max intensity or all-out efforts of 30 seconds. You should be pushing yourself to the max for each one.</li>
+                    <li>Recover. Recover for 2 to 4 minutes after each sprint to allow your breathing and heart rate to slow to the point that you can hold a conversation without gasping.</li>
+                    <li>Repeat. Repeat the sprint/recovery routine 4-8 times depending on your level and ability. For your first workout, you will want to stop at 4 sprints. That's fine. Try to build up to 8.</li>
+                    <li>Workout Goal. The goal is to do this workout six times in two weeks and then back off to twice a week for maintenance for six to eight weeks before you change your workout.</li>
+                    <li>Rest and Recovery. Allow at least one to two days of rest or another easy exercise between sprint workouts.</li>
+                  </ol>
+                  <p>Source: https://www.verywellfit.com/get-fit-faster-with-30-second-sprints-3120562</p>
+                </div>
+                </li>
+              </ul>
+
+
+
+        </div>
+
+        <div class="row ">
+          <div class="col s12">
+            <h2>Locations</h2>
+            <p>Click on the pinpoints to see additional information.</p>
+          </div>
+        </div>
+
+
+
+        <div class="row">
+          <div class="col s12">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1cUsRNN-RdyDkYxe06I8X1keeQzpoRrGT" width="100%" height="480"></iframe>
+          </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

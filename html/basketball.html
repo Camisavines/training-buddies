@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Training Buddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- css -->
+    <link rel="stylesheet" href="../css/home.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center">Basketball</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="bio.html">Creators</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="bio.html">Creators</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+
+
+    <!-- Left side of the screen -->
+        <div class="row" style="padding-top: 15px;">
+
+          <div class="col s3 center show-on-medium-and-up hide-on-small-only">
+            <div class="row">
+              <img class="circle" width="50%" src="../photos/basketball/shaq.png">
+              <p><b>Shaquille O'Neal</b></p>
+            </div>
+
+            <div class="row">
+              <img class="circle" width="50%" src="../photos/basketball/bron.jpg">
+              <p><b>Lebron James</b></p>
+            </div>
+
+            <div class="row">
+              <img class="circle" width="50%" src="../photos/basketball/park.jpg">
+              <p><b>Candace Parker </b></p>
+            </div>
+          </div>
+
+          <div class="col s12 center hide-on-med-and-up show-on-small" style="padding-top:15px; padding-bottom:15px;">
+            <div class="col s4">
+              <img class="circle" width="75%" src="../photos/basketball/shaq.png">
+              <p><b>Shaquille O'Neal</b></p>
+            </div>
+            <div class="col s4">
+              <img class="circle" width="75%" src="../photos/basketball/bron.jpg">
+              <p><b>Lebron James</b></p>
+            </div>
+            <div class="col s4">
+              <img class="circle" width="75%" src="../photos/basketball/park.jpg">
+              <p><b>Candace Parker</b></p>
+            </div>
+          </div>
+
+
+        <!-- <div class="row hide-on-med-and-up">
+
+          <div class="col s12 center">
+
+            <div class="col s4">
+              <img class="circle" width="75%" src="https://t4.ftcdn.net/jpg/01/00/72/23/500_F_100722342_15KrW8pYzlslJwopMhmI7EHVwx1XK0KC.jpg">
+            </div>
+
+            <div class="col s4">
+              <img class="circle" width="75%" src="https://t4.ftcdn.net/jpg/01/00/72/23/500_F_100722342_15KrW8pYzlslJwopMhmI7EHVwx1XK0KC.jpg">
+            </div>
+
+            <div class="col s4">
+              <img class="circle" width="75%" src="https://t4.ftcdn.net/jpg/01/00/72/23/500_F_100722342_15KrW8pYzlslJwopMhmI7EHVwx1XK0KC.jpg">
+            </div>
+
+          </div>
+
+        </div> -->
+
+
+          <div class="col s12 m8">
+
+    <!-- workout routines go -->
+            <div class="row">
+
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header">Workout 1</div>
+                  <div class="collapsible-body"><span><strong>Agility Basketball Workouts</strong></span>
+                    <p>A typical speed/agility workout for a basketball player would be set up like this:</p>
+                    <ol>
+                      <li>Warm-up (low intensity 400-yard run, 10-15 minutes of mobility exercises)</li>
+                      <li>Technique exercises (10-15 minutes)</li>
+                      <li>Agility drills without the ball (slide, backpedal, stop/start, etc.)</li>
+                      <p>Source: https://www.online-basketball-drills.com/basketball-drills</p>
+                    </ol>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Workout 2</div>
+                  <div class="collapsible-body"><span><strong>Shooting Practice</strong></span>
+                  <p>This drill helps you shoot the ball more accuratly and at all sorts of distances. (Try watching videos on profesional shooting form, before starting this workout) </p>
+                  <ol>
+                    <li>1-Hand Form Shooting Drill - 30 shots. Shoot 10 shots from 3 spots. You should be 3 to 5 feet from the basket. Make 8 out of 10 from each spot before progressing to next exercise.</li>
+                    <li>1-Hand Form Shooting With Guide Hand - 50 Shots. Shoot 10 shots from 5 spots. You should be 3 to 5 feet from the basket.</li>
+                    <p>Source: https://www.online-basketball-drills.com/basketball-drills</p>
+                  </ol>
+                </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Workout 3</div>
+                  <div class="collapsible-body"><span><strong>Basketball Cardiovascular Conditioning</strong></span>
+                  <p>Try running to help with stamina and speed.</p>
+                  <ol>
+                    <li>Do anaerobic running workouts. (Short Sprints)</li>
+                    <li>Do aerobic running workouts. (Long Distance Jog)</li>
+                    <p>Source: https://www.online-basketball-drills.com/basketball-drills</p>
+                  </ol>
+                </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Workout 4</div>
+                  <div class="collapsible-body"><span><strong>Basketball Dribbling Workouts</strong></span>
+                  <p>This drill helps you control the ball when you move around with it. It also improves your technique.</p>
+                  <p>1. Dribble the ball hard. The more time the ball spends in your hand, the more control you have of the ball. The harder you dribble, the quicker it gets back in your hand.</p>
+                  <p>2. Head up at all times. Look at the rim or a spot on the wall during all practice.</p>
+                  <p>3. Use your finger tips to control the ball, not your palm.</p>
+                  <p>4. Use your imagination. Picture when and how you would use each of the dribbles.</p>
+                  <p>5. Teach mentality. There is too much dribbling for no reason in our game today. I like to teach that the primary purpose for putting the ball on the floor is to get a lay-up. If you don't have an opportunity, don't put it on the floor.</p>
+                  <p>Source: https://www.online-basketball-drills.com/basketball-drills</p>
+
+                </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Workout 5</div>
+                  <div class="collapsible-body"><span><strong> Your ability to pass the ball accurately, using the correct technique will have a major impact on the flow and effectiveness of your offense. (Try watching videos of the proper passing formation.)</strong></span>
+                  <p>Your ability to pass the ball accurately, using the correct technique will have a major impact on the flow and effectiveness of your offense.</p>
+                  <p>1. Two Hand Chest Pass</p>
+                  <p>2. Over the Head Pass</p>
+                  <p>3. Bounce Pass</p>
+                  <p>4. Skip Pass</p>
+                  <p>Source: https://www.online-basketball-drills.com/basketball-drills</p>
+                  <ol>
+                  </ol>
+                </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Workout 6</div>
+                  <div class="collapsible-body"><span><strong>Around the World Close-Out</strong></span>
+                    <p>This drill increases your ability to stop your opponent from scoreing a point. (Try the workout below on a basketball court)</p>
+                    <ol>
+                      <li>Set-up: you need a stopwatch or timer and five tennis balls.</li>
+                      <li>Arrange the tennis balls as follows: two in the corners, two on the wings, and one at the top of the key.</li>
+                      <li>Place a basket under the rim to serve as the tennis ball drop-off point.</li>
+                      <li>Begin in a defensive stance under the rim. When the clock starts, sprint (in any order you choose) and close out on the tennis balls, grab them and return them to the basket under the rim. Return to the drop-off basket after each close-out.</li>
+                      <li>Complete all five close-outs.</li>
+                      <li>Repeat 2-3 times. Attempt to beat your previous time.</li>
+                      <p>Source: https://www.online-basketball-drills.com/basketball-drills</p>
+                    </ol>
+                  </div>
+                </li>
+              </ul>
+
+
+
+        </div>
+
+
+        <div class="row">
+          <div class="col s12">
+            <h2>Locations</h2>
+            <p>Click on the pinpoints to see additional information.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1DFSjeF8_IW_DEeAf_oyKSP_eNkspzw2K" width="100%" height="480"></iframe>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Training Buddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- css -->
+    <link rel="stylesheet" href="../css/home.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center">Biking</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="bio.html">Creators</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="bio.html">Creators</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+
+
+
+
+    <!-- Left side of the screen -->
+        <div class="row" style="padding-top: 15px;">
+
+          <div class="col s3 center show-on-medium-and-up hide-on-small-only">
+            <div class="row">
+              <img class="circle" width="50%" src="../photos/biking/berto.jpg">
+              <p><b>Alberto Contador</b></p>
+            </div>
+
+            <div class="row">
+              <img class="circle" width="50%" src="../photos/biking/sean.jpg">
+              <p><b>Sean Kelly</b></p>
+            </div>
+
+            <div class="row">
+              <img class="circle" width="50%" src="../photos/biking/fabiana.jpg">
+              <p><b>Fabiana Luperini</b></p>
+            </div>
+          </div>
+
+          <div class="col s12 center hide-on-med-and-up show-on-small" style="padding-top:15px; padding-bottom:15px;">
+            <div class="col s4">
+              <img class="circle" width="75%" src="../photos/biking/berto.jpg">
+              <p><b>Alberto Contador</b></p>
+            </div>
+            <div class="col s4">
+              <img class="circle" width="75%" src="../photos/biking/sean.jpg">
+              <p><b>Christiano Ronaldo</b></p>
+            </div>
+            <div class="col s4">
+              <img class="circle" width="75%" src="../photos/biking/fabiana.jpg">
+              <p><b>Lionel Messi</b></p>
+            </div>
+          </div>
+
+
+        <!-- <div class="row hide-on-med-and-up">
+
+          <div class="col s12 center">
+
+            <div class="col s4">
+              <img class="circle" width="75%" src="https://t4.ftcdn.net/jpg/01/00/72/23/500_F_100722342_15KrW8pYzlslJwopMhmI7EHVwx1XK0KC.jpg">
+            </div>
+
+            <div class="col s4">
+              <img class="circle" width="75%" src="https://t4.ftcdn.net/jpg/01/00/72/23/500_F_100722342_15KrW8pYzlslJwopMhmI7EHVwx1XK0KC.jpg">
+            </div>
+
+            <div class="col s4">
+              <img class="circle" width="75%" src="https://t4.ftcdn.net/jpg/01/00/72/23/500_F_100722342_15KrW8pYzlslJwopMhmI7EHVwx1XK0KC.jpg">
+            </div>
+
+          </div>
+
+        </div> -->
+
+
+          <div class="col s12 m8">
+
+    <!-- workout routines go -->
+            <div class="row">
+
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header">Workout 1</div>
+                  <div class="collapsible-body"><span><strong>Flying 40s to Enhance Muscular Endurance</strong></span>
+                    <p>This workout helps you build power and train your body to recover quickly between efforts for events that demand repeated surges.</p>
+                    <ol>
+                      <li>In a medium to large gear, push hard for 40 seconds.</li>
+                      <li>Recover 20 seconds.</li>
+                      <li>Repeat 10 times.</li>
+                      <li>Do up to four, resting five minutes between sets.</li>
+                      <p>Source: https://www.bicycling.com/training/g20027530/quick-cycling-workouts-for-power-and-endurance/?slide=1</p>
+                    </ol>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Workout 2</div>
+                  <div class="collapsible-body"><span><strong>10-Speeds to Improve Pedaling Efficiency</strong></span>
+                  <p>These lightning-fast efforts help you develop a fluid and efficient cadence</p>
+                  <ol>
+                    <li>Pedal as hard as you can for 10 seconds in a gear you can push 90 to 110 rpm with effort.</li>
+                    <li>Then spin easy for 20 seconds.</li>
+                    <li>Repeat for 10 to 15 minutes</li>
+                    <li>Rest five minutes. Then do another set.</li>
+                    <p>Source: https://www.bicycling.com/training/g20027530/quick-cycling-workouts-for-power-and-endurance/?slide=1</p>
+                  </ol>
+                </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Workout 3</div>
+                  <div class="collapsible-body"><span><strong>Hill Charges</strong></span>
+                  <p>This helps you ride up hills. Eventually hills wont be such a big obstacle.<p>
+                  <ol>
+                    <li>On a moderate incline, stand up on the pedals and charge up the hill as fast as possible for 30 seconds.</li>
+                    <li>Coast back to your starting point and repeat, this time seated.</li>
+                    <li>Alternate between standing and sitting for six climbs.</li>
+                    <li>Recover 10 minutes then do another set.</li>
+                    <p>Source: https://www.bicycling.com/training/g20027530/quick-cycling-workouts-for-power-and-endurance/?slide=1</p>
+                  </ol>
+                </div>
+                </li>
+              </ul>
+
+
+
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <h2>Locations</h2>
+            <p>Click on the pinpoints to see additional information.</p>
+          </div>
+        </div>
+
+
+
+        <div class="row">
+          <div class="col s12">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1KZASjjn37Sggag3qvWrMv28u-FzxHifB" width="100%" height="480"></iframe>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

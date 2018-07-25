@@ -1,0 +1,133 @@
+body {
+text-align: center;
+background-color: #FF7043;
+padding-bottom: 50px;
+}
+
+@font-face {
+    font-family: 'Deftone';
+    src: url('deftone stylus.ttf') format('truetype');
+}
+
+.card-title {
+  font-family: 'Deftone' !important;
+  color: #43d2ff;
+}
+
+.accent-color {
+  color: #43d2ff;
+}
+
+.input-field label {
+  color: #43d2ff !important;
+}
+
+.brand-logo {
+  font-family: 'Deftone' !important;
+  color: #43d2ff;
+}
+
+h1, h2, h3, h4 {
+    color: #43d2ff;
+    font-family: 'Deftone' !important;
+}
+
+.nav-wrapper {
+background-color: #FF7043;
+}
+
+.sport {
+  height:400px;
+}
+
+
+.btn {
+  padding-top: 50px;
+}
+
+.white-text {
+  padding: 50px;
+}
+
+#row2 {
+  height: 200px;
+}
+
+#profilecard {
+  heigt: 411px;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+#hero::after, .parallax {
+  content: '';
+  /* background-image: url('http://www.wnit.org/ourtown/images/dtsb.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  opacity: .6 ;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#us {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.collapsible-body {
+  background-color: #eeeeee;
+  text-align: left;
+}
+
+
+
+
+
+
+.parallax-container{
+  position:relative;
+  overflow:hidden;
+  height:500px;
+}
+.parallax-container .parallax {
+  position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1
+}
+
+.parallax-container .parallax img {
+  opacity:0;
+  position:absolute;
+  left:50%;
+  bottom:0;
+  min-width:100%
+  ;min-height:100%
+  ;-webkit-transform:translate3d(0, 0, 0);
+  transform:translate3d(0, 0, 0);
+  -webkit-transform:translateX(-50%);
+  transform:translateX(-50%)
+}
+
+.pin-top,.pin-bottom{
+  position:relative;
+}
+
+.pinned{
+  position:fixed !important;
+}
+
+.waves-effect, .waves-light, .btn {
+  background-color: #43d2ff !important;
+  color: black ;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Training Buddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- css -->
+    <link rel="stylesheet" href="../css/home.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+
+  </head>
+<body>
+
+<!-- Nav Bar -->
+<nav>
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo center">List a Location</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="bio.html">Creators</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="home.html">Home</a></li>
+  <li><a href="profile.html">Profile</a></li>
+  <li><a href="bio.html">Creators</a></li>
+  <li><a href="#">Logout</a></li>
+</ul>
+
+
+  <!-- Form Container -->
+   <div class="container">
+
+  <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="Address" type="text" class="validate">
+            <label for="Address">Address</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="Street_Name" type="text" class="validate">
+            <label for="Street_Name">Street_Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="City" type="password" class="validate">
+            <label for="City">City</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="Zip_Code" type="email" class="validate">
+            <label for="Zip_Code">Zip Code</label>
+          </div>
+        </div>
+
+    <!-- Switch -->
+  <div class="switch">
+    <label>
+      Public
+      <input type="checkbox">
+      <span class="lever"></span>
+      Private
+    </label>
+  </div>
+
+    <p>
+      <label>
+        <input type="checkbox"/>
+        <span>Near You</span>
+      </label>
+    </p>
+            <p>
+              <p>
+          <label>
+            <input type="checkbox"/>
+            <span>Free</span>
+          </label>
+        </p>
+        <p>
+          <p>
+      <label>
+        <input type="checkbox"/>
+        <span>Has Food</span>
+      </label>
+    </p>
+    <p>
+
+      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+         <i class="material-icons right">send</i>
+       </button>
+
+  </body

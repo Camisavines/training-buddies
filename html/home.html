@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Training Buddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- css -->
+    <link rel="stylesheet" href="../css/home.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center">Home</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="bio.html">Creators</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="bio.html">Creators</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+
+    <!-- <div class="parallax-container" id="hero">
+       <div class="parallax"><img src="https://downtownsouthbend.com/sites/default/files/Downtown%20for%20the%20Holidays.jpg"></div>
+       <h2>Find your perfect training buddy</h2>
+    </div> -->
+
+
+    <div class="row hide-on-med-and-up parallax-container" id="hero">
+      <div class="parallax"><img src="../photos/southbend.jpg"></div>
+      <div class="container" id="logo">
+        <img src="../photos/logos/training_buddies.png" width="90%">
+        <p style="color: white; font-size: 18pt;">Our mission is to encourage people to workout by providing workout suggestoilns, specified locations, and a way to find Training Buddies</p>
+      </div>
+    </div>
+
+    <div class="row hide-on-small-only parallax-container white-text" id="hero">
+      <div class="parallax"><img src="../photos/southbend.jpg"></div>
+      <div class="container" id="logo">
+        <img src="../photos/logos/training_buddies variant.png" width="100%">
+        <p style="font-size: 24px;">Our mission is to encourage people to workout while providing means to nutrition and find Training Buddies</p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <h2>Sports</h2>
+    </div>
+
+
+      <div class="row">
+
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                  <a href="basketball.html"><img src="../photos/basketball/basketball.jpg"></a>
+                <span class="card-title">Basketball</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <a href="baseball.html"><img src="../photos/baseball/baseball.jpeg"></a>
+                <span class="card-title">Baseball</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                  <a href="football.html"><img src="../photos/football/football.jpeg"></a>
+                <span class="card-title">Football</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                  <a href="running.html"><img src="../photos/running/run.jpg"></a>
+                <span class="card-title">Running</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <a href="biking.html"><img src="../photos/biking/biking.jpeg"></a>
+                <span class="card-title">Biking</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <a href="swimming.html"><img src="../photos/swimming/swim.jpg"></a>
+                <span class="card-title">Swimming</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <a href="weightlifting.html"><img src="../photos/weights/weight.jpg"></a>
+                <span class="card-title">Weight-lifting</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <a href="volleyball.html"><img src="../photos/volleyball/volley.jpg"></a>
+                <span class="card-title">Volleyball</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <a href="soccer.html"><img src="../photos/soccer/soccer.jpg"></a>
+                <span class="card-title">Soccer</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <div class="parallax-container" id="hero">
+           <div class="parallax"><img src="../photos/south-bend-2.jpg"></div>
+           <h2>Find your perfect training buddy</h2>
+         </div>
+
+         <div class="section" style="height: 100%; padding-top: 100px; padding-bottom: 100px;">
+           <div class="row">
+             <h2 class="header" style="padding: 25px;">The Creators</h2>
+             <div class="col s6 m3 center">
+               <img src="../photos/us/alex3.JPG" class="circle center" width="60%">
+               <h4>Alex</h4>
+             </div>
+             <div class="col s6 m3 center">
+               <img src="../photos/us/angad.JPG" class="circle center" width="60%">
+               <h4>Angad</h4>
+             </div>
+             <div class="col s6 m3 center">
+               <img src="../photos/us/jason.JPG" class="circle center" width="60%">
+               <h4>Jason</h4>
+             </div>
+             <div class="col s6 m3 center">
+               <img src="../photos/us/marcus.JPG" class="circle center" width="60%">
+               <h4>Marcus</h4>
+             </div>
+           </div>
+         </div>
+
+
+
+  </body>
+  </html>

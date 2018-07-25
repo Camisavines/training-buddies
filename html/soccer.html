@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Training Buddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- css -->
+    <link rel="stylesheet" href="../css/home.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center">Soccer</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="bio.html">Creators</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="bio.html">Creators</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+
+<!-- Left side of the screen -->
+    <div class="row" style="padding-top: 15px;">
+
+      <div class="col s3 center show-on-medium-and-up hide-on-small-only">
+        <div class="row">
+          <img class="circle" width="50%" src="../photos/soccer/alex.jpg">
+          <p><b>Alex Morgan</b></p>
+        </div>
+
+        <div class="row">
+          <img class="circle" width="50%" src="../photos/soccer/chris.jpeg">
+          <p><b>Christiano Ronaldo</b></p>
+        </div>
+
+        <div class="row">
+          <img class="circle" width="50%" src="../photos/soccer/messi.png">
+          <p><b>Lionel Messi</b></p>
+        </div>
+      </div>
+
+      <div class="col s12 center hide-on-med-and-up show-on-small" style="padding-top:15px; padding-bottom:15px;">
+        <div class="col s4">
+          <img class="circle" width="75%" src="../photos/soccer/alex.jpg">
+          <p><b>Alex Morgan</b></p>
+        </div>
+        <div class="col s4">
+          <img class="circle" width="75%" src="../photos/soccer/chris.jpeg">
+          <p><b>Christiano Ronaldo</b></p>
+        </div>
+        <div class="col s4">
+          <img class="circle" width="75%" src="../photos/soccer/messi.png">
+          <p><b>Lionel Messi</b></p>
+        </div>
+      </div>
+
+
+    <!-- <div class="row hide-on-med-and-up">
+
+      <div class="col s12 center">
+
+        <div class="col s4">
+          <img class="circle" width="75%" src="https://t4.ftcdn.net/jpg/01/00/72/23/500_F_100722342_15KrW8pYzlslJwopMhmI7EHVwx1XK0KC.jpg">
+        </div>
+
+        <div class="col s4">
+          <img class="circle" width="75%" src="https://t4.ftcdn.net/jpg/01/00/72/23/500_F_100722342_15KrW8pYzlslJwopMhmI7EHVwx1XK0KC.jpg">
+        </div>
+
+        <div class="col s4">
+          <img class="circle" width="75%" src="https://t4.ftcdn.net/jpg/01/00/72/23/500_F_100722342_15KrW8pYzlslJwopMhmI7EHVwx1XK0KC.jpg">
+        </div>
+
+      </div>
+
+    </div> -->
+
+
+      <div class="col s12 m8">
+
+
+        <!-- workout -->
+        <div class="row">
+
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header">Workout 1</div>
+              <div class="collapsible-body"><span><strong>Confined Dribbling</strong></span>
+                <p>This drill helps you dribble fast and accurately in a tight space while avoiding a defender.</p>
+                <ol>
+                  <li>Set up four cones in a box 5 yards apart.</li>
+                  <li>Stand in the box with a ball and a partner.</li>
+                  <li>Dribble for the specified time while your partner tries to steal the ball.</li>
+                </ol>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">Workout 2</div>
+              <div class="collapsible-body"><span><strong>Partner/Wall Drill</strong></span>
+              <p>This drill helps you control the ball when you receive a pass. It also reinforceyour technique.</p>
+              <ol>
+                <li>Have a partner toss a ball in the air or bounce it off a wall</li>
+                <li>Pass back and forth 10-20 times, using the inside of your foot.</li>
+              </ol>
+            </div>
+            </li>
+            <li>
+              <div class="collapsible-header">Workout 3</div>
+              <div class="collapsible-body"><span><strong>Closed-Space Dribbling</strong></span>
+              <p>This helps you use all different surfaces of your feet.</p>
+              <ol>
+                <li>Place three cones on the ground in a triangle or line.</li>
+                <li>Dribble the ball between the cones, using all surfaces of your feet.</li>
+                <li>Perform quick touches to guide the ball around the cones.</li>
+              </ol>
+            </div>
+            </li>
+            <li>
+              <div class="collapsible-header">Workout 4</div>
+              <div class="collapsible-body"><span><strong>Running</strong></span>
+              <p>This drill helps you control the ball when you receive a pass. It also reinforces your technique.</p>
+              <p>This helps you become faster and have a more stroner shot.</p>
+              <p>Running around cones can help increase stamina.</p>
+            </div>
+            </li>
+            <li>
+              <div class="collapsible-header">Workout 5</div>
+              <div class="collapsible-body"><span><strong>One Touch Passing</strong></span>
+              <p>This helps your touch become better and more controlled.</p>
+              <ol>
+                <li>Players pass and follow one touch but the servers remain in their places.</li>
+              </ol>
+            </div>
+            </li>
+            <li>
+              <div class="collapsible-header">Workout 6</div>
+              <div class="collapsible-body"><span><strong>Cone Drill</strong></span>
+                <p>This drill increases your ability to trap the ball on the inside or outside of your foot and keep it away from defenders.</p>
+                <ol>
+                  <li>Line up six to 10 cones 5 yards apart.</li>
+                  <li>Weave through the cones, dribbling the ball with the inside of your feet.</li>
+                </ol>
+              </div>
+            </li>
+          </ul>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col s12">
+        <h2>Locations</h2>
+        <p>Click on the pinpoints to see additional information about each location.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1yRXdobnPd_hBOL4mcvJQe9WarLStblSI" width="100%" height="560"></iframe>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+
+</div>
+
+
+
+
+  </body>
+</html>

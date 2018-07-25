@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Training Buddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- css -->
+    <link rel="stylesheet" href="../css/home.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center">Volleyball</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="bio.html">Creators</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="bio.html">Creators</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+
+
+
+
+    <!-- Left side of the screen -->
+        <div class="row" style="padding-top: 15px;">
+
+          <div class="col s3 center show-on-medium-and-up hide-on-small-only">
+            <div class="row">
+              <img class="circle" width="50%" src="../photos/volleyball/kerri.jpg">
+              <p><b>Kerri Walsh Jennings</b></p>
+            </div>
+
+            <div class="row">
+              <img class="circle" width="50%" src="../photos/volleyball/misty.jpg">
+              <p><b>Misty May-Treanor</b></p>
+            </div>
+
+            <div class="row">
+              <img class="circle" width="50%" src="../photos/volleyball/sean.jpg">
+              <p><b>Sean Rosenthal</b></p>
+            </div>
+          </div>
+
+          <div class="col s12 center hide-on-med-and-up show-on-small" style="padding-top:15px; padding-bottom:15px;">
+            <div class="col s4">
+              <img class="circle" width="75%" src="../photos/volleyball/kerri.jpg">
+              <p><b>Kerri Walsh Jennings</b></p>
+            </div>
+            <div class="col s4">
+              <img class="circle" width="75%" src="../photos/volleyball/misty.jpg">
+              <p><b>Misty May-Treanor</b></p>
+            </div>
+            <div class="col s4">
+              <img class="circle" width="75%" src="../photos/volleyball/sean.jpg">
+              <p><b>Sean Rosenthal</b></p>
+            </div>
+          </div>
+
+
+        <!-- <div class="row hide-on-med-and-up">
+
+          <div class="col s12 center">
+
+            <div class="col s4">
+              <img class="circle" width="75%" src="https://t4.ftcdn.net/jpg/01/00/72/23/500_F_100722342_15KrW8pYzlslJwopMhmI7EHVwx1XK0KC.jpg">
+            </div>
+
+            <div class="col s4">
+              <img class="circle" width="75%" src="https://t4.ftcdn.net/jpg/01/00/72/23/500_F_100722342_15KrW8pYzlslJwopMhmI7EHVwx1XK0KC.jpg">
+            </div>
+
+            <div class="col s4">
+              <img class="circle" width="75%" src="https://t4.ftcdn.net/jpg/01/00/72/23/500_F_100722342_15KrW8pYzlslJwopMhmI7EHVwx1XK0KC.jpg">
+            </div>
+
+          </div>
+
+        </div> -->
+
+
+          <div class="col s12 m8">
+
+    <!-- workout routines go -->
+            <div class="row">
+
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header">Workouts 1-5</div>
+                  <div class="collapsible-body"><span><strong>Confined Dribbling</strong></span>
+                    <p>Building strength allows athletes to then work on power development by keeping them in safe positions when exploding through the power movements required in volleyball. (Search up how to do the workouts below)</p>
+                    <ol>
+                      <li>Good mornings. This exercise, done with 2 dumbbells, is good for glute strength, hamstrings and improving an athlete's vertical jump.</li>
+                      <li>Side-to-side twist with overhead press. Holding a plate with your hands at the 9 and 3 positions, this exercise builds the core and also develops upper body strength. Specific to volleyball, it helps the shoulder stay healthy and aids in the transfer of power from the core to the upper body.</li>
+                      <li>Single leg RDL to overhead pressThis exercise, which works your hamstrings and glutes, helps improve your balance and boosts your jump.Recommended Reps: 3 sets of 10 reps.</li>
+                      <li> Lunge with a twist. This is another exercise that uses a plate. It helps strengthen your legs and makes your ankles more stable so you're at less risk for injury. It also helps train you for single-leg jumps.Recommended Reps: 3 sets of 16 reps (8 left, 8 right)</li>
+                      <li>Good mornings. This exercise, done with 2 dumbbells, is good for glute strength, hamstrings and improving an athlete's vertical jump.</li>
+                    </ol>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">Workouts 6-10</div>
+                  <div class="collapsible-body"><span><strong>Partner/Wall Drill</strong></span>
+                  <p>Building strength allows athletes to then work on power development by keeping them in safe positions when exploding through the power movements required in volleyball. (Search up how to do the workouts below)</p>
+                  <ol>
+                    <li>Dumbbell snatch. The dumbbell snatch is great for training triple extension (which is basically the mechanics of jumping), power development and improving explosiveness.Recommended Reps: 3 sets of 8 reps</li>
+                    <li>Dumbbell pullover. This exercise has similar benefits as the side-to-side twist with overhead press: core and upper body strength and transfer of strength from the core to the upper body in rhythm. It helps with all overhead volleyball movements, including serving, blocking, setting and attacking. Recommended Reps: 3 sets of 12 reps</li>
+                    <li>Dumbbell squat to press. This is a good general exercise that helps all positions in volleyball. It builds lower-body strength and also accounts for the upper-body movements that are very important to volleyball: setting, serving, attacking, blocking and transferring power from the lower body to the upper body in a fluid motion. Recommended Reps: 3 sets of 16-20 reps</li>
+                    <li>10-and-2 drops. This is a great exercise for shoulder health and core stability. It helps the shoulder build the muscles and strength needed to slow the shoulder down during throwing motions. It's good for any volleyball move, but particularly blocking, setting and attacking.Recommended Reps: 3 sets of 10 reps.</li>
+                    <li>Biceps with overhead press. This exercise is used for injury prevention in shoulders. Basically, it helps attackers develop muscles that act as secondary movers during spiking. Recommended Reps: 3 sets of 8 reps.</li>
+                </div>
+                </li>
+              </ul>
+
+
+
+        </div>
+
+        <div class="row">
+          <div class="col s12">
+            <h2>Locations</h2>
+            <p>Click on the pinpoints to see additional information.</p>
+          </div>
+        </div>
+
+
+
+        <div class="row">
+          <div class="col s12">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1pTAwU7MihfVxkovSvKcrmabpXcmBXnbs" width="100%" height="480"></iframe>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
