@@ -72,16 +72,18 @@ function goHome() {
           }
 
           var storageRef = firebase.storage().ref('photos/' + key);
-          storageRef.put(file, {contentType:file.type});
+          storageRef.put(file, {contentType:file.type}).then(function(){
+            window.location.replace("../html/home.html")
+          })
       });
     });
-    window.location.replace("../html/home.html");
+    // window.location.replace("../html/home.html");
   }
 
   function loadData(){
     firebase.database().ref('Project').on('child_added',function(snapshot){
       var data = snapshot.val();
-      $('.name').append('<h3>' + data.fname + " " +data.lname + '</h3>');
+      $('.name').append('<h2>' + data.fname + " " +data.lname + '</h2>');
       // $('.lname').append('<h1>' + data.lname + '</h1>');
       $(".bio").val(data.bio);
       $('.email').val(data.email);
