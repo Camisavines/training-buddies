@@ -7,7 +7,6 @@
     $('.collapsible').collapsible();
     $('.sidenav').sidenav();
     $('.datepicker').datepicker();
-    console.log('here');
   }
 
 

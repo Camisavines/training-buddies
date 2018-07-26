@@ -15,8 +15,13 @@
     // alert('You better stop!');
     firebase.initializeApp(config);
     $('#submit').click(writeData);
+    $('#login').click(goHome);
     loadData();
   }
+
+function goHome() {
+  window.location.replace('../html/home.html')
+}
 
   function writeData(e){
     e.preventDefault();
@@ -69,8 +74,8 @@
           var storageRef = firebase.storage().ref('photos/' + key);
           storageRef.put(file, {contentType:file.type});
       });
-      // window.location.replace("../html/home.html");
     });
+    window.location.replace("../html/home.html");
   }
 
   function loadData(){
